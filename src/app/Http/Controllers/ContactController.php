@@ -10,4 +10,12 @@ public function index()
   {
     return view('contact.index');
   }
+
+public function confirm(Request $request)
+  {
+    $contact = $request->only(['name', 'email', 'tel', 'content']);
+    return view('contact.confirm', compact('contact'));
+  }
 }
+
+
