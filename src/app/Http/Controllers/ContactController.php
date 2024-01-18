@@ -16,6 +16,11 @@ public function confirm(Request $request)
     $contact = $request->only(['name', 'email', 'tel', 'content']);
     return view('contact.confirm', compact('contact'));
   }
+
+public function store(Request $request)
+  {
+    $contact = $request->only(['name', 'email', 'tel', 'content']);
+  }
 }
 
 

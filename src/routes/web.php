@@ -17,3 +17,5 @@ Route::get('/', [ContactController::class, 'index']);
 
 Route::post('/contacts/confirm',[ContactController::class, 'confirm']);
 
+// 入力内容確認ページの送信ボタン
+Route::post('/contacts',[ContactController::class, 'store']);
